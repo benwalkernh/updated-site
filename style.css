@@ -1,0 +1,344 @@
+@font-face {
+    font-family: "Ogg";
+    src: url(Assets/Ogg-Roman.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Ogg Italic";
+    src: url(Assets/Ogg-Italic.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Canela Thin";
+    src: url(assets/CanelaText-Thin.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Canela Thin Italic";
+    src: url(assets/CanelaText-ThinItalic.woff) format("woff");
+}
+
+
+@keyframes move {
+    0% {
+      transform: translate(2px, 6px);
+      background: linear-gradient(to bottom, rgba(255,237,160,1), rgba(255,138,102,1));
+
+    }
+    100% {
+      transform: translate(200px, 600px);
+      background: linear-gradient(to bottom, rgba(160,246,255,1), rgba(199,102,255,1));
+
+    } 
+}
+
+body {
+    background-color: #F4F3EF;
+}
+
+main {
+    color: #393330;
+    overflow-x: hidden;
+    top: 0;  
+    left: 0;  
+    padding: 50px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index:1;
+}
+
+.circles {
+    position: absolute;
+    margin: auto;
+    left: 10%;
+    top: 5%;
+    
+}
+
+.circle-1 {
+    background: linear-gradient(to bottom, rgba(255,237,160,1), rgba(255,138,102,1));
+    width: 800px;
+    height: 800px;
+    left: 10px;
+    border-radius: 50%;
+    filter: blur(30px);
+    animation: move 5s infinite alternate;
+
+}
+
+.circle-2 {
+    background: linear-gradient(to bottom, rgba(160,246,255,1), rgba(199,102,255,1));
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    filter: blur(30px);
+    margin-top: 700px;
+}
+
+@media (min-width: 1000px) {
+
+    .circles {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 45%;
+    }
+
+    .circle-1 {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        top: 50%;
+        left: -50px;
+    }
+
+    .circle-2 {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        margin-top: 500px;
+        left: 150%;
+        right: 0;    
+    }
+}
+
+
+header {
+    text-align: right;
+    font-family: "Canela Thin";
+    font-size: 15px;
+    position: relative;
+    display: block;
+}
+
+.name {
+    display: relative;
+    margin: 200px 0 0 0;
+    position: relative;
+
+}
+
+.name div {
+    display: flex;
+}
+
+span img {
+    width: 300px;
+    padding: 20px 0 0 10px;
+}
+
+h1 {
+    font-family: "Ogg";
+    font-size: 200px;
+    font-weight: 100;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    z-index: 1;
+}
+
+h2{
+    font-family: "Canela Thin";
+    font-size: 50px;
+    line-height: 1.8em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h3 {
+    font-family: "Ogg Italic";
+    font-size: 125px;
+    font-weight: 100;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h4{
+    font-family: "Canela Thin";
+    font-size: 80px;
+    line-height: 1.2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+ol {
+    position: relative;
+    width: 60%;
+    margin: 0 50px 0 50px;
+    font-family: "Canela Thin";
+    font-size: 50px;
+    line-height: 1.8em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: right;
+}
+
+p {
+    font-family: "Canela Thin";
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 100;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.intro {
+    margin: 75px 0 75px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.intro-copy {
+    position: relative;
+}
+
+@media (min-width: 1000px) {
+    .intro-copy {
+        margin: 0 0 0 50px;
+        width: 2000px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .intro {
+        display: flex;
+    }
+}
+
+.contact {
+    visibility: hidden;
+    position: absolute; 
+}
+
+.contact div {
+    margin: 20px 0 20px 0;
+}
+
+@media (min-width: 1000px) {
+    .contact {
+        visibility: visible;
+        position: relative; 
+        width: 1000px;
+    }
+}
+
+.work {
+    margin: 150px 0 0 0;
+    z-index: 1;
+    position: relative;
+    text-align: right;
+}
+
+.project {
+    margin: 0 0 75px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.projects-mobile {
+    visibility: visible;
+    position: absolute;
+}
+
+.projects-desktop {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+@media (min-width: 1000px) {
+    .projects-mobile {
+        visibility: hidden;
+    }
+    .projects-desktop {
+        visibility: visible;
+    }
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid #393330;
+    margin: 60px 5px 2px 5px;
+    width: 100%;
+}
+
+.list-item {
+    display: flex;
+}
+
+.project-img-desktop {
+    width: 40%;
+}
+
+.overtures-img {
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.pp-img {
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.npa-img {
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.projects-desktop img {
+    position: relative;
+    height: 100%;
+    padding: 0;
+}
+
+@media (min-width: 1000px) {
+
+.projects-desktop img {
+    overflow-x: hidden;
+    position: absolute;
+    height: 100%;
+    padding: 0;
+}
+}
+
+.project-img {
+    position: relative;
+}
+
+.project-number {
+    position: absolute;
+    z-index: 1;
+}
+
+.project-name {
+    z-index: 1;
+    text-align: right;
+    padding-right: 25px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    padding-top: 95px;
+    margin-bottom: 20px;
+}
+
+
