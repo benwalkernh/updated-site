@@ -34,6 +34,8 @@
 
 body {
     background-color: #F4F3EF;
+    overflow-x: hidden;
+
 }
 
 main {
@@ -129,6 +131,12 @@ span img {
     padding: 20px 0 0 10px;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
 h1 {
     font-family: "Ogg";
     font-size: 200px;
@@ -151,7 +159,7 @@ h2{
 }
 
 h3 {
-    font-family: "Ogg Italic";
+    font-family: "Ogg";
     font-size: 125px;
     font-weight: 100;
     margin-block-start: 0em;
@@ -166,6 +174,26 @@ h4{
     text-transform: uppercase;
     margin-block-start: 0em;
     margin-block-end: 0em;
+}
+
+h5{
+    font-family: "Ogg";
+    font-size: 30px;
+    line-height: 1.2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h6{
+    font-family: "Ogg";
+    font-size: 80px;
+    line-height: 1.2em; 
+    font-weight: 100;
+    margin-block-start: 0em;
+    margin-block-end: 0em; 
+    margin-top: 25px;
 }
 
 ol {
@@ -184,11 +212,19 @@ ol {
 
 p {
     font-family: "Canela Thin";
-    font-size: 14px;
-    line-height: 1.5em;
+    font-size: 20px;
+    line-height: 2.5rem;
     font-weight: 100;
     margin-block-start: 0em;
     margin-block-end: 0em;
+}
+
+@media (min-width: 1000px) {
+    p {
+        width: 45%;
+        line-height: 1.5em;
+
+    }
 }
 
 .intro {
@@ -197,8 +233,24 @@ p {
     position: relative;
 }
 
+.intropar {
+    margin: 20px 0 0 0;
+}
+
+.titleanddesc {
+    margin-top: 50px;
+}
+
+.storyhalf {
+    margin: 0 0 20px 0;
+}
+
 .intro-copy {
     position: relative;
+}
+
+.pullquote {
+    margin: 100px 0 100px 0;
 }
 
 @media (min-width: 1000px) {
@@ -244,9 +296,16 @@ p {
     position: relative;
 }
 
+.projectimage {
+    padding-top: 95px;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
 .projects-mobile {
     visibility: visible;
-    position: absolute;
+    margin: 50px 0 0 0;
 }
 
 .projects-desktop {
@@ -283,6 +342,8 @@ hr {
 .project-img-desktop {
     width: 40%;
 }
+
+
 
 .overtures-img {
     position: absolute;
@@ -323,7 +384,6 @@ hr {
 }
 
 .project-number {
-    position: absolute;
     z-index: 1;
 }
 
@@ -333,12 +393,56 @@ hr {
     padding-right: 25px;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+.projectintro {
+    margin: 20px 0 0 0;
+    padding: 10px 0 30px 0;
+    left: 5%;
+    width: 89%;
     position: relative;
-    padding-top: 95px;
-    margin-bottom: 20px;
 }
 
+.introlist {
+    margin: 50px 0 0 0;
+    display: flex;
+    position: relative;
+}
+
+hX {
+    font-family: "Canela-Thin";
+    font-size: calc(10px + 3 * ((100vw - 320px) / 55));
+}
+
+ul {
+    padding: 0;
+    font-family: "Ogg";
+    font-size: calc(10px + 3 * ((100vw - 320px) / 45));
+    text-transform: uppercase;
+    line-height: 1.5em;
+    list-style-type: none;
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+  }
+
+@media (min-width: 1000px) {
+ hX {
+    font-family: "Canela-Thin";
+    font-size: 35px;
+    }
+ ul {
+    font-size: 40px;
+    }
+
+}
+
+  
+
+  .list {
+      width: 50%;
+  }
+
+  @media (min-width: 1000px) {
+    .list {
+        width: 30%;
+    }
+}
 
