@@ -45,6 +45,7 @@
 body {
     background-color: #F4F3EF;
     overflow-x: hidden;
+    width: 100%;
 
 }
 
@@ -225,7 +226,7 @@ ol {
 p {
     font-family: "Canela Thin";
     font-size: 36px;
-    line-height: 2em;
+    line-height: 1.5em;
     font-weight: 100;
     margin-block-start: 0em;
     margin-block-end: 0em;
