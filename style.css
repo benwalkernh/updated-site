@@ -234,6 +234,7 @@ p {
 
 @media (min-width: 1000px) {
     p {
+        font-size: 26px;
         width: 45%;
         line-height: 1.5em;
 
@@ -325,17 +326,22 @@ p {
     visibility: hidden;
     position: absolute;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     margin-top: 50px;
+
+    
 }
 
 @media (min-width: 1000px) {
     .projects-mobile {
         visibility: hidden;
+
     }
     .projects-desktop {
         visibility: visible;
+        width: 100%;
+
+
     }
 }
 
