@@ -32,7 +32,7 @@
 
 @keyframes moveopp {
     0% {
-      transform: translate(200px, 600px);
+      transform: translate(200px, 300px);
 
 
     }
@@ -110,8 +110,9 @@ main {
     height: 800px;
     border-radius: 50%;
     filter: blur(30px);
-    margin-top: 700px;
+    margin-top: 200px;
     animation: moveopp 5s infinite alternate;
+    mix-blend-mode: hard-light;
 
 }
 
@@ -136,9 +137,9 @@ main {
         position: relative;
         width: 600px;
         height: 600px;
-        margin-top: 500px;
-        left: 150%;
-        right: 0;    
+        left: 60%;
+        top: 20%;
+        right: 20%;    
     }
 }
 
@@ -325,6 +326,7 @@ p {
     z-index: 1;
     position: relative;
     text-align: right;
+
 }
 
 .project {
@@ -347,10 +349,11 @@ p {
 
 .projects-desktop {
     visibility: hidden;
+    display: none;
     position: absolute;
-    display: flex;
     justify-content: space-between;
     margin-top: 50px;
+
 
     
 }
@@ -358,11 +361,15 @@ p {
 @media (min-width: 1000px) {
     .projects-mobile {
         visibility: hidden;
+        display: none;
+
 
     }
     .projects-desktop {
         visibility: visible;
         width: 100%;
+        display: flex;
+
 
 
     }
