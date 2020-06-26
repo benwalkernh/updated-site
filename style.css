@@ -112,7 +112,6 @@ main {
     filter: blur(30px);
     margin-top: 200px;
     animation: moveopp 5s infinite alternate;
-    mix-blend-mode: hard-light;
 
 }
 
