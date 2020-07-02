@@ -312,7 +312,7 @@ h7 {
     display: inline;
 }
 
-.contact p {
+.contacct.p {
     font-size: 22px;
 }
 
@@ -397,7 +397,7 @@ ul {
 }
 
 .titleanddesc {
-    margin-top: 50px;
+    margin-top: 40vh;
 }
 
 .storyhalf {
