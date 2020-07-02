@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: "Ogg Italic";
+    font-family: "Ogg-Italic";
     src: url(Assets/Ogg-Italic.woff) format("woff");
 }
 
@@ -16,6 +16,16 @@
 @font-face {
     font-family: "Canela Thin Italic";
     src: url(assets/CanelaText-ThinItalic.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Adieu-Black";
+    src: url(assets/Adieu-Black.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Adieu-Light";
+    src: url(assets/Adieu-Light.woff) format("woff");
 }
 
 
@@ -69,6 +79,7 @@ body {
     background-color: #F4F3EF;
     overflow-x: hidden;
     width: 100%;
+    margin: 0 0 0 0;
 
 }
 
@@ -98,19 +109,20 @@ main {
     width: 800px;
     height: 800px;
     left: 10px;
+    border: 0.75px solid #393330;
     border-radius: 50%;
-    filter: blur(30px);
+    filter: blur(30px); 
     animation: move 5s infinite alternate;
 
 }
 
 .circle-2 {
-    background: linear-gradient(to bottom, rgba(160,246,255,1), rgba(199,102,255,1));
+    background: linear-gradient(to bottom, rgba(160,246,255,1), rgba(199,102,255,1)); 
     width: 800px;
     height: 800px;
     border-radius: 50%;
-    filter: blur(30px);
-    margin-top: 200px;
+    filter: blur(30px); 
+    margin-top: 200px;  
     animation: moveopp 5s infinite alternate;
 
 }
@@ -144,12 +156,35 @@ main {
 
 
 header {
-    text-align: right;
     font-family: "Canela Thin";
     font-size: 15px;
-    position: relative;
+    position: fixed;
     display: block;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #F4F3EF;
+    z-index: 1;
+    border-bottom: 1px solid #393330;
 }
+
+div.caption {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+
+
+.caption-about {
+    margin-left: 150px;
+}
+
+
 
 .name {
     display: relative;
@@ -213,14 +248,16 @@ h4{
 }
 
 h5{
-    font-family: "Ogg";
-    font-size: 30px;
+    font-family: "Adieu-Light";
+    font-size: calc(5px + 3 * ((100vw - 320px) / 400));
     line-height: 1.2em;
     font-weight: 100;
     text-transform: uppercase;
     margin-block-start: 0em;
     margin-block-end: 0em;
+    display: inline;
 }
+
 
 h6{
     font-family: "Ogg";
@@ -253,12 +290,73 @@ p {
     font-weight: 100;
     margin-block-start: 0em;
     margin-block-end: 0em;
+    display: inline;
+}
+
+.contact p {
+    font-size: 22px;
+}
+
+.read-more {
+    margin: 0 0 0 0;
+    align-items: center;
+    align-content: center;
+}
+
+.read-more span {
+    height: 100px;
+
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    top: .125em;
+    display: inline-flex;
+    align-self: center;
+}
+
+
+
+hX{
+    font-family: "Ogg";
+    font-size: calc(10px + 3 * ((100vw - 320px) / 150));
+    line-height: 1.2em;
+    font-weight: 100;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    display: inline;
+}
+
+ul {
+    padding: 0;
+    font-family: "Adieu-Light";
+    font-size: calc(10px + 3 * ((100vw - 320px) / 300));
+    line-height: 1.75em;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+  }
+
+  @media (min-width: 1000px) {
+
+    hX {
+        font-size: calc(5px + 3 * ((100vw - 320px) / 300));
+    }
+    ul {
+        font-size: calc(10px + 3 * ((100vw - 320px) / 300));
+    }
+}
+
+.list {
+    width: 40%;
+    display: inline;
 }
 
 @media (min-width: 1000px) {
     p {
         font-size: 26px;
-        width: 45%;
         line-height: 1.5em;
 
     }
@@ -266,12 +364,17 @@ p {
 
 .intro {
     margin: 75px 0 75px 0;
-    z-index: 1;
     position: relative;
 }
 
 .intropar {
     margin: 20px 0 0 0;
+}
+
+@media (min-width: 1000px) {
+    .intropar {
+        width: 50%;
+    }
 }
 
 .titleanddesc {
@@ -282,18 +385,48 @@ p {
     margin: 0 0 20px 0;
 }
 
+.texthalf {
+    margin: 0 0 20px 0;
+}
+
+@media (min-width: 1000px) {
+    
+    .projectstory {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .storyhalf {
+        width: 50%;
+    }
+
+    .texthalf {
+        width: 50%;
+        margin: 0 0 20px 50px;
+    }
+
+}
 .intro-copy {
     position: relative;
 }
 
 .pullquote {
-    margin: 100px 0 100px 0;
+    margin: 200px 0 200px 0;
+}
+
+@media (min-width: 1000px) {
+    .pullquote {
+        width: 100%;
+        display: block;
+        margin: 200px 0 300px 0;
+    }
 }
 
 @media (min-width: 1000px) {
     .intro-copy {
         margin: 0 0 0 50px;
         width: 2000px;
+
     }
 }
 
@@ -306,10 +439,15 @@ p {
 .contact {
     visibility: hidden;
     position: absolute; 
+    z-index: 2;
+    margin-left: 195px;
+    margin-top: 20px;
+
+
 }
 
 .contact div {
-    margin: 20px 0 20px 0;
+    margin: 0 0 0 0;
 }
 
 @media (min-width: 1000px) {
@@ -322,12 +460,25 @@ p {
 
 .work {
     margin: 150px 0 0 0;
-    z-index: 1;
     position: relative;
     text-align: right;
-
 }
 
+.next {
+    width: auto;
+    text-align: center;
+}
+
+.next h1:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.next-project {
+    font-family: Ogg-Italic;
+    font-size: 30px;
+    margin: 100px 0 25px 0;
+}
 .project {
     margin: 0 0 75px 0;
     z-index: 1;
@@ -337,9 +488,15 @@ p {
 .projectimage {
     padding-top: 95px;
     margin-bottom: 20px;
-    width: 100%;
-
 }
+
+.supportimg {
+}
+
+@media (min-width: 1000px) {
+    .projectimage {
+        margin: 50px;
+    }
 
 .projects-mobile {
     visibility: visible;
@@ -352,6 +509,8 @@ p {
     position: absolute;
     justify-content: space-between;
     margin-top: 50px;
+    margin-bottom: 50px;
+
 
 
     
@@ -451,46 +610,17 @@ hr {
 
 .introlist {
     margin: 50px 0 0 0;
-    display: flex;
     position: relative;
-}
+    display: flex;
+    width: 40%;
 
-hX {
-    font-family: "Canela-Thin";
-    font-size: calc(10px + 3 * ((100vw - 320px) / 55));
-}
 
-ul {
-    padding: 0;
-    font-family: "Ogg";
-    font-size: calc(10px + 3 * ((100vw - 320px) / 45));
-    text-transform: uppercase;
-    line-height: 1.5em;
-    list-style-type: none;
-    margin-block-start: 0.5em;
-    margin-block-end: 1em;
-  }
+}
 
 @media (min-width: 1000px) {
- hX {
-    font-family: "Canela-Thin";
-    font-size: 35px;
-    }
- ul {
-    font-size: 40px;
-    }
-
-}
-
-  
-
-  .list {
-      width: 50%;
-  }
-
-  @media (min-width: 1000px) {
-    .list {
-        width: 30%;
+    .introlist {
+        width: 40%;
+        display: flex;
+        margin: 30px 0 0 150px;
     }
 }
-
