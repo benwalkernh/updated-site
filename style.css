@@ -157,12 +157,12 @@ main {
 
 header {
     font-family: "Canela Thin";
-    font-size: 18px;
+    font-size: 28px;
     position: fixed;
     display: block;
     top: 0;
     width: 100vw;
-    height: 50px;
+    height: 90px;
     background-color: #F4F3EF;
     z-index: 1;
     border-bottom: 1px solid #393330;
@@ -171,17 +171,25 @@ header {
 @media (min-width: 1000px) {
     header {
         font-size: 18px;
+        height: 50px;
+        font-size: 18px;
     }
 }
 
 div.caption {
     margin-right: 50px;
     margin-left: 50px;
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 25px;
+}
 
-    
+@media (min-width: 1000px) {
+    div.caption {
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 
