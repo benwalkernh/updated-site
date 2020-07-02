@@ -500,6 +500,11 @@ ul {
     text-align: center;
 }
 
+.p-name {
+    padding: 0 50px 0 50px;
+
+}
+
 .next h1:hover {
     color: red;
     transition: 0.5s;
