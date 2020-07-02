@@ -157,7 +157,7 @@ main {
 
 header {
     font-family: "Canela Thin";
-    font-size: 15px;
+    font-size: 18px;
     position: fixed;
     display: block;
     top: 0;
@@ -166,6 +166,12 @@ header {
     background-color: #F4F3EF;
     z-index: 1;
     border-bottom: 1px solid #393330;
+}
+
+@media (min-width: 1000px) {
+    header {
+        font-size: 18px;
+    }
 }
 
 div.caption {
@@ -249,13 +255,20 @@ h4{
 
 h5{
     font-family: "Adieu-Light";
-    font-size: calc(5px + 3 * ((100vw - 320px) / 400));
+    font-size: calc(5px + 3 * ((100vw - 320px) / 75));
     line-height: 1.2em;
     font-weight: 100;
     text-transform: uppercase;
     margin-block-start: 0em;
     margin-block-end: 0em;
     display: inline;
+}
+
+@media (min-width: 1000px) {
+
+    h5{
+        font-size: calc(5px + 3 * ((100vw - 320px) / 400));
+    }
 }
 
 
@@ -286,6 +299,16 @@ ol {
 p {
     font-family: "Canela Thin";
     font-size: 36px;
+    line-height: 1.5em;
+    font-weight: 100;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    display: inline;
+}
+
+h7 {
+    font-family: "Canela Thin";
+    font-size: 16px;
     line-height: 1.5em;
     font-weight: 100;
     margin-block-start: 0em;
@@ -510,11 +533,56 @@ ul {
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 50px;
-
-
-
-    
 }
+
+.casestudies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.casestudy-1 {
+    width: 40%;
+    margin-top: 500px;
+}
+
+.casestudy-2 {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.casestudy-3 {
+    width: 50%;
+    margin-top: 300px;
+    margin-left: 400px;
+}
+
+.extrainfo {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.cs-words {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #393330;
+}
+
+.p-desc {
+    width: 50%;
+    float: left;
+
+}
+
+.p-type {
+    float: right;
+}
+
+.p-image {
+    width: 100%;
+}
+
 
 @media (min-width: 1000px) {
     .projects-mobile {
@@ -553,10 +621,10 @@ hr {
 
 
 .overtures-img {
-    position: absolute;
-    opacity: 0;
     transition-duration: 0.5s;
 }
+
+
 
 .pp-img {
     position: absolute;
@@ -565,8 +633,6 @@ hr {
 }
 
 .npa-img {
-    position: absolute;
-    opacity: 0;
     transition-duration: 0.5s;
 }
 
