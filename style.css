@@ -290,19 +290,7 @@ h6{
     margin-top: 25px;
 }
 
-ol {
-    position: relative;
-    width: 60%;
-    margin: 0 50px 0 50px;
-    font-family: "Canela Thin";
-    font-size: 50px;
-    line-height: 1.8em;
-    font-weight: 100;
-    text-transform: uppercase;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    text-align: right;
-}
+
 
 p {
     font-family: "Canela Thin";
@@ -381,7 +369,7 @@ ul {
 }
 
 .list {
-    width: 40%;
+    width: 50%;
     display: inline;
 }
 
@@ -534,7 +522,25 @@ ul {
     margin-bottom: 20px;
 }
 
-.supportimg {
+.casestudies {
+    display: block;
+    justify-content: space-between;
+}
+
+.cs-words {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #393330;
+}
+
+.extrainfo {
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+.casestudies {
+    margin: 20px 0 20px 0;
 }
 
 @media (min-width: 1000px) {
@@ -542,19 +548,6 @@ ul {
         margin: 50px;
     }
 
-.projects-mobile {
-    visibility: visible;
-    margin: 50px 0 0 0;
-}
-
-.projects-desktop {
-    visibility: hidden;
-    display: none;
-    position: absolute;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 .casestudies {
     display: flex;
@@ -580,7 +573,6 @@ ul {
 .extrainfo {
     display: flex;
     margin-top: 20px;
-
 }
 
 .cs-words {
@@ -604,39 +596,10 @@ ul {
     width: 100%;
 }
 
-
-@media (min-width: 1000px) {
-    .projects-mobile {
-        visibility: hidden;
-        display: none;
-
-
-    }
-    .projects-desktop {
-        visibility: visible;
-        width: 100%;
-        display: flex;
-
-
-
-    }
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-bottom: 1px solid #393330;
-    margin: 60px 5px 2px 5px;
-    width: 100%;
 }
 
 .list-item {
     display: flex;
-}
-
-.project-img-desktop {
-    width: 40%;
 }
 
 
@@ -657,21 +620,6 @@ hr {
     transition-duration: 0.5s;
 }
 
-.projects-desktop img {
-    position: relative;
-    height: 100%;
-    padding: 0;
-}
-
-@media (min-width: 1000px) {
-
-.projects-desktop img {
-    overflow-x: hidden;
-    position: absolute;
-    height: 100%;
-    padding: 0;
-}
-}
 
 .project-img {
     position: relative;
@@ -699,9 +647,6 @@ hr {
     margin: 50px 0 0 0;
     position: relative;
     display: flex;
-    width: 40%;
-
-
 }
 
 @media (min-width: 1000px) {
