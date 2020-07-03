@@ -246,10 +246,12 @@ h2{
 h3 {
     font-family: "Ogg";
     font-size: 125px;
+    line-height: 1em;
     font-weight: 100;
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
+
 
 h4{
     font-family: "Canela Thin";
@@ -397,7 +399,15 @@ ul {
 }
 
 .titleanddesc {
-    margin-top: 40vh;
+    margin-top: 30vh;
+    width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .titleanddesc {
+        margin-top: 40vh;
+        width: 50%;
+    }
 }
 
 .storyhalf {
@@ -437,7 +447,7 @@ ul {
     .pullquote {
         width: 100%;
         display: block;
-        margin: 200px 0 300px 0;
+        margin: 300px 0 300px 0;
     }
 }
 
@@ -549,7 +559,7 @@ ul {
 
 .casestudy-1 {
     width: 40%;
-    margin-top: 500px;
+    margin-top: 600px;
 }
 
 .casestudy-2 {
@@ -559,7 +569,7 @@ ul {
 
 .casestudy-3 {
     width: 50%;
-    margin-top: 300px;
+    margin-top: 100px;
     margin-left: 400px;
 }
 
