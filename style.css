@@ -429,7 +429,8 @@ ul {
     .projectstory {
         display: flex;
         justify-content: space-between;
-        margin: 10px 0 10px 0;
+        margin: 50px;
+        overflow-x: hidden;
     }
 
     .storyhalf {
@@ -535,13 +536,17 @@ ul {
 }
 
 .projectimage {
-    padding-top: 95px;
     margin-bottom: 20px;
 }
 
-.supportimg {
-    margin: 0 10px 0 10px;
-    width: 97%;
+@media (min-width: 1000px) {
+    .supportimg-1 {
+        margin-right: 20px;;
+    }
+    
+    .supportimg-2 {
+        margin-left: 20px;;
+    }
 }
 
 
