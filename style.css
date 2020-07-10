@@ -96,13 +96,23 @@ main {
     z-index:1;
 }
 
+
+
+a {
+    color: #b6b3b2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #393330;
+    transition: 1s;
+}
+
 .circles {
     position: absolute;
     margin: auto;
     left: 10%;
-    top: 5%;
-    
-    
+    top: 5%;  
 }
 
 .circle-1 {
@@ -220,10 +230,12 @@ span img {
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.cb-img {
     -webkit-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
     -moz-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
     box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
-
 }
 
 h1 {
@@ -240,7 +252,7 @@ h1 {
 h2{
     font-family: "Canela Thin";
     font-size: 50px;
-    line-height: 1.8em;
+    line-height: 1.6em;
     font-weight: 100;
     text-transform: uppercase;
     margin-block-start: 0em;
@@ -357,11 +369,15 @@ ul {
     padding: 0;
     font-family: "Adieu-Light";
     font-size: calc(10px + 3 * ((100vw - 320px) / 50));
-    line-height: 1.75em;
+    line-height: 1.25em;
     list-style-type: none;
     text-transform: uppercase;
     margin-block-start: 0.5em;
     margin-block-end: 1em;
+  }
+
+  li {
+      margin-top: 10px;
   }
 
   @media (min-width: 1000px) {
@@ -370,7 +386,7 @@ ul {
         font-size: calc(5px + 3 * ((100vw - 320px) / 300));
     }
     ul {
-        font-size: calc(10px + 3 * ((100vw - 320px) / 300));
+        font-size: calc(10px + 3 * ((100vw - 320px) / 350));
     }
 }
 
@@ -519,7 +535,7 @@ ul {
 
 }
 
-.next h1:hover {
+.next:hover {
     color: red;
     transition: 0.5s;
 }
@@ -527,7 +543,7 @@ ul {
 .next-project {
     font-family: Ogg-Italic;
     font-size: 30px;
-    margin: 100px 0 25px 0;
+    margin: 50px 0 25px 0;
 }
 .project {
     margin: 0 0 75px 0;
@@ -537,15 +553,24 @@ ul {
 
 .projectimage {
     margin-bottom: 20px;
+    -webkit-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+    -moz-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+    box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
 }
 
 @media (min-width: 1000px) {
     .supportimg-1 {
-        margin-right: 20px;;
+        margin-right: 20px;
+        -webkit-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+        -moz-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+        box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
     }
     
     .supportimg-2 {
-        margin-left: 20px;;
+        margin-left: 20px;
+        -webkit-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+        -moz-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+        box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
     }
 }
 
@@ -572,7 +597,7 @@ ul {
 
 .casestudy-1 {
     width: 40%;
-    margin-top: 600px;
+    margin-top: 800px;
 }
 
 .casestudy-2 {
@@ -582,8 +607,24 @@ ul {
 
 .casestudy-3 {
     width: 50%;
-    margin-top: 100px;
-    margin-left: 400px;
+    margin-top: 600px;
+
+}
+
+.casestudy-4 {
+    width: 40%;
+    margin-top: 50px;
+}
+
+.casestudy-5 {
+    width: 40%;
+    margin-top: 800px;
+
+}
+
+.casestudy-6 {
+    width: 50%;
+    margin-top: 50px;
 }
 
 .extrainfo {
@@ -620,6 +661,7 @@ ul {
 
 .p-image {
     width: 100%;
+    margin-top: 50px;
 }
 
 }
@@ -632,6 +674,9 @@ ul {
 
 .overtures-img {
     transition-duration: 0.5s;
+    -webkit-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+    -moz-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+    box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
 }
 
 
@@ -640,15 +685,24 @@ ul {
     position: absolute;
     opacity: 0;
     transition-duration: 0.5s;
+    -webkit-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+    -moz-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+    box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
 }
 
 .npa-img {
     transition-duration: 0.5s;
+    -webkit-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+    -moz-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+    box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
 }
 
 
 .project-img {
     position: relative;
+    -webkit-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+    -moz-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
+    box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
 }
 
 .project-number {
