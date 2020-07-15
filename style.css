@@ -45,9 +45,9 @@
     } 
 }
 
-@keyframes moveopp {
+@keyframes upward {
     0% {
-      transform: translate(200px, 300px);
+      transform: translate(200px, 600px);
 
 
     }
@@ -105,7 +105,6 @@ main {
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    z-index:1;
 }
 
 
@@ -124,8 +123,6 @@ a:hover {
 }
 
 .circles {
-    position: absolute;
-    margin: auto;
     left: 10%;
     top: 5%;  
 }
@@ -155,9 +152,8 @@ a:hover {
     height: 800px;
     border-radius: 50%;
     filter: blur(30px); 
-    margin-top: 200px;  
-    animation: moveopp 5s infinite alternate;
-
+    margin-top: 1200px;  
+    animation: upward 5s infinite alternate;
 }
 
 @media (min-width: 1200px) {
@@ -268,7 +264,6 @@ h1 {
     text-transform: uppercase;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    z-index: 1;
 }
 
 h2{
@@ -450,7 +445,7 @@ ul {
 @media (min-width: 1200px) {
     p {
         font-size: 22px;
-        line-height: 1.4em;
+        line-height: 1.5em;
         margin-top: 11px;
 
     }
@@ -543,7 +538,6 @@ ul {
 .contact {
     visibility: hidden;
     position: absolute; 
-    z-index: 2;
     margin-left: 195px;
     margin-top: 20px;
 
@@ -582,7 +576,6 @@ ul {
     text-transform: uppercase;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    z-index: 1;
 
 }
 
@@ -596,9 +589,15 @@ ul {
     font-size: 30px;
     margin: 50px 0 25px 0;
 }
+
+@media (min-width: 1200px) {
+    .next-project {
+        margin: 100px 0 25px 0;
+    }
+}
+
 .project {
     margin: 0 0 75px 0;
-    z-index: 1;
     position: relative;
 }
 
@@ -631,7 +630,8 @@ ul {
     margin: 10px 0 25px 0;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #393330;
+    border-bottom: 1px solid #4a3f3a;
+    position: relative;
 }
 
 .cs-words:hover {
@@ -650,7 +650,6 @@ ul {
     display: flex;
     justify-content: space-between;
     margin: 20px 0 20px 0;
-    
 }
 
 .casestudy-1, .casestudy-2, .casestudy-3, .casestudy-4, .casestudy-5, .casestudy-6 {
@@ -701,7 +700,9 @@ ul {
 .p-image {
     width: 100%;
     margin-top: 50px;
+    position: relative;
 }
+
 
 }
 
@@ -745,11 +746,9 @@ ul {
 }
 
 .project-number {
-    z-index: 1;
 }
 
 .project-name {
-    z-index: 1;
     text-align: right;
     padding-right: 25px;
 }
