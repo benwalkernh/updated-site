@@ -383,7 +383,7 @@ h7 {
 
 hX{
     font-family: "Ogg";
-    font-size: calc(10px + 3 * ((100vw - 320px) / 50));
+    font-size: calc(10px + 3 * ((100vw - 320px) / 80));
     line-height: 1.2em;
     font-weight: 100;
     margin-block-start: 0em;
@@ -394,13 +394,38 @@ hX{
 ul {
     padding: 0;
     font-family: "Adieu-Light";
-    font-size: calc(10px + 3 * ((100vw - 320px) / 50));
+    font-size: calc(10px + 3 * ((100vw - 320px) / 100));
     line-height: 1.25em;
     list-style-type: none;
     text-transform: uppercase;
     margin-block-start: 0.5em;
     margin-block-end: 1em;
   }
+
+@media (min-width: 1200px) {
+ ul {
+        padding: 0;
+        font-family: "Adieu-Light";
+        font-size: calc(10px + 3 * ((100vw - 320px) / 60));
+        line-height: 1.25em;
+        list-style-type: none;
+        text-transform: uppercase;
+        margin-block-start: 0.5em;
+        margin-block-end: 1em;
+    }
+
+    hX{
+        font-family: "Ogg";
+        font-size: calc(10px + 3 * ((100vw - 320px) / 50));
+        line-height: 1.2em;
+        font-weight: 100;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        display: inline;
+    }
+}
+
+
 
   li {
       margin-top: 10px;
@@ -628,37 +653,18 @@ ul {
     
 }
 
-.casestudy-1 {
+.casestudy-1, .casestudy-2, .casestudy-3, .casestudy-4, .casestudy-5, .casestudy-6 {
     width: 47%;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
-.casestudy-2 {
-    width: 47%;
-    margin-top: 50px;
+@media (min-width: 1200px) {
+    .casestudy-1, .casestudy-2, .casestudy-3, .casestudy-4, .casestudy-5, .casestudy-6 {
+        width: 47%;
+        margin-top: 50px;
+    }
 }
 
-.casestudy-3 {
-    width: 47%;
-    margin-top: 50px;
-
-}
-
-.casestudy-4 {
-    width: 47%;
-    margin-top: 50px;
-}
-
-.casestudy-5 {
-    width: 47%;
-    margin-top: 50px;
-
-}
-
-.casestudy-6 {
-    width: 50%;
-    margin-top: 50px;
-}
 
 .extrainfo {
     position: relative;
