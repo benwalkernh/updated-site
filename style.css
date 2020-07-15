@@ -125,6 +125,7 @@ a:hover {
 .circles {
     left: 10%;
     top: 5%;  
+    position: absolute;
 }
 
 .circle-1 {
@@ -711,6 +712,8 @@ ul {
 .p-desc {
     float: left;
     margin-bottom: 50px;
+    position: relative;
+
 }
 
 .p-type {
