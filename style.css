@@ -135,7 +135,7 @@ a:hover {
     border: 0.75px solid #393330;
     border-radius: 50%;
     filter: blur(30px); 
-    animation: move 5s infinite alternate;
+    animation: move 5s infinite ease-in-out alternate;
 }
 
 .cs-circle {
@@ -153,7 +153,7 @@ a:hover {
     border-radius: 50%;
     filter: blur(30px); 
     margin-top: 1200px;  
-    animation: upward 5s infinite alternate;
+    animation: upward 5s infinite  ease-in-out alternate;
 }
 
 @media (min-width: 1200px) {
