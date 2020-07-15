@@ -383,7 +383,7 @@ h7 {
 
 hX{
     font-family: "Ogg";
-    font-size: calc(10px + 3 * ((100vw - 320px) / 65));
+    font-size: calc(10px + 3 * ((100vw - 320px) / 60));
     line-height: 1.2em;
     font-weight: 100;
     margin-block-start: 0em;
@@ -394,7 +394,7 @@ hX{
 ul {
     padding: 0;
     font-family: "Adieu-Light";
-    font-size: calc(10px + 3 * ((100vw - 320px) / 85));
+    font-size: calc(10px + 3 * ((100vw - 320px) / 80));
     line-height: 1.25em;
     list-style-type: none;
     text-transform: uppercase;
@@ -488,7 +488,7 @@ ul {
 }
 
 .texthalf {
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 @media (min-width: 1200px) {
