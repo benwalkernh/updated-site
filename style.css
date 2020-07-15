@@ -126,7 +126,6 @@ a:hover {
     left: 0;
     top: 5%;  
     position: absolute;
-    overflow-x: hidden;
     width: 100%;
 }
 
