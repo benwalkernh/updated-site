@@ -123,9 +123,11 @@ a:hover {
 }
 
 .circles {
-    left: 10%;
+    left: 0;
     top: 5%;  
     position: absolute;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .circle-1 {
