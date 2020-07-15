@@ -160,7 +160,7 @@ a:hover {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 
     .circles {
         position: absolute;
@@ -201,7 +201,7 @@ header {
     border-bottom: 1px solid #393330;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     header {
         font-size: 18px;
         height: 50px;
@@ -215,7 +215,7 @@ div.caption {
     margin-top: 25px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     div.caption {
         margin-right: 50px;
         margin-left: 50px;
@@ -312,10 +312,14 @@ h5{
     display: inline;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 
     h5{
         font-size: calc(5px + 3 * ((100vw - 320px) / 400));
+    }
+
+    h2{
+        font-size: calc(5px + 3 * ((100vw - 320px) / 90));
     }
 }
 
@@ -402,7 +406,7 @@ ul {
       margin-top: 10px;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
 
     hX {
         font-size: calc(5px + 3 * ((100vw - 320px) / 300));
@@ -418,7 +422,7 @@ ul {
     display: inline;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     p {
         font-size: 22px;
         line-height: 1.4em;
@@ -436,7 +440,7 @@ ul {
     margin: 20px 0 0 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .intropar {
         width: 50%;
     }
@@ -447,7 +451,7 @@ ul {
     width: 100%;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .titleanddesc {
         margin-top: 40vh;
         width: 50%;
@@ -462,7 +466,7 @@ ul {
     margin: 0 0 20px 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     
     .projectstory {
         display: flex;
@@ -489,7 +493,7 @@ ul {
     margin: 200px 0 200px 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .pullquote {
         width: 100%;
         display: block;
@@ -497,7 +501,7 @@ ul {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .intro-copy {
         margin: 0 0 0 50px;
         width: 2000px;
@@ -505,7 +509,7 @@ ul {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .intro {
         display: flex;
     }
@@ -525,7 +529,7 @@ ul {
     margin: 0 0 0 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .contact {
         visibility: visible;
         position: relative; 
@@ -580,7 +584,7 @@ ul {
     box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .supportimg-1 {
         margin-right: 20px;
         -webkit-box-shadow: -1px 0px 41px -8px rgba(133,133,133,0.25);
@@ -611,7 +615,7 @@ ul {
     color: rgba(255,138,102,1);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .projectimage {
         margin: 50px;
     }
@@ -625,29 +629,29 @@ ul {
 }
 
 .casestudy-1 {
-    width: 40%;
-    margin-top: 800px;
+    width: 47%;
+    margin-top: 50px;
 }
 
 .casestudy-2 {
-    width: 50%;
+    width: 47%;
     margin-top: 50px;
 }
 
 .casestudy-3 {
-    width: 50%;
-    margin-top: 600px;
+    width: 47%;
+    margin-top: 50px;
 
 }
 
 .casestudy-4 {
-    width: 40%;
+    width: 47%;
     margin-top: 50px;
 }
 
 .casestudy-5 {
-    width: 40%;
-    margin-top: 800px;
+    width: 47%;
+    margin-top: 50px;
 
 }
 
@@ -664,7 +668,7 @@ ul {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .extrainfo {
         display: flex;
         margin-top: 10px;
@@ -758,7 +762,7 @@ ul {
     display: flex;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .introlist {
         width: 40%;
         display: flex;
