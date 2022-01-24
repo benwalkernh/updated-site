@@ -82,8 +82,8 @@
   .appear {
     opacity: 0;
     animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
   }
 
@@ -122,68 +122,8 @@ a:hover {
     transition: 0.25s;
 }
 
-.circles {
-    left: 0;
-    top: 5%;  
-    position: absolute;
-    width: 100%;
-}
 
-.circle-1 {
-    background: linear-gradient(to bottom, rgba(255,237,160,1), rgba(255,138,102,1));
-    width: 800px;
-    height: 800px;
-    left: 10px;
-    border: 0.75px solid #393330;
-    border-radius: 50%;
-    filter: blur(30px); 
-    animation: move 5s infinite ease-in-out alternate;
-}
 
-.cs-circle {
-    width: 50px;
-    height: 50px;
-    background: #393330;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-.circle-2 {
-    background: linear-gradient(to bottom, rgba(160,246,255,1), rgba(199,102,255,1)); 
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
-    filter: blur(30px); 
-    margin-top: 1200px;  
-    animation: upward 5s infinite  ease-in-out alternate;
-}
-
-@media (min-width: 1200px) {
-
-    .circles {
-        position: absolute;
-        margin: auto;
-        left: 0;
-        top: 45%;
-    }
-
-    .circle-1 {
-        position: relative;
-        width: 600px;
-        height: 600px;
-        top: 50%;
-        left: -50px;
-    }
-
-    .circle-2 {
-        position: relative;
-        width: 600px;
-        height: 600px;
-        left: 60%;
-        top: 20%;
-        right: 20%;    
-    }
-}
 
 
 header {
@@ -288,6 +228,16 @@ h1 {
     margin-block-end: 0em;
 }
 
+h6 {
+    font-family: "Ogg";
+    font-size: 150px;
+    font-weight: 100;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
 h2{
     font-family: "Canela Thin";
     font-size: 60px;
@@ -343,7 +293,7 @@ h5{
 
 h6{
     font-family: "Ogg";
-    font-size: 80px;
+    font-size: 75px;
     line-height: 1.2em; 
     font-weight: 100;
     margin-block-start: 0em;
@@ -388,12 +338,10 @@ h7 {
 
 }
 
-.arrow {
-    height: 50px;
-    width: 50px;
-    top: .125em;
-    display: inline-flex;
-    align-self: center;
+.arrow:hover {
+    color: rgba(255,138,102,1);
+    transition: 0.25s;
+    
 }
 
 
@@ -501,7 +449,7 @@ ul {
 }
 
 .storyhalf {
-    margin: 0 0 20px 0;
+    margin: 15px 0 15px 0;
 }
 
 .texthalf {
@@ -545,7 +493,7 @@ ul {
 
 @media (min-width: 1200px) {
     .intro-copy {
-        margin: 0 0 0 50px;
+        margin: 0 0 0 0;
         width: 2000px;
 
     }
@@ -558,10 +506,9 @@ ul {
 }
 
 .contact {
-    visibility: hidden;
-    position: absolute; 
-    margin-left: 195px;
-    margin-top: 20px;
+    position: relative; 
+
+    margin-top: 0px;
 
 
 }
@@ -579,9 +526,9 @@ ul {
 }
 
 .work {
-    margin: 150px 0 0 0;
+    margin: 150px 0 75px 0;
     position: relative;
-    text-align: right;
+    text-align: left;
 }
 
 .next {
@@ -649,7 +596,7 @@ ul {
 
 
 .cs-words {
-    margin: 10px 0 25px 0;
+    margin: 10px 0 10px 0;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #4a3f3a;
@@ -657,7 +604,6 @@ ul {
 }
 
 .cs-words:hover {
-    margin: 10px 0 25px 10px;
     transition: 0.5s;
     color: rgba(255,138,102,1);
 }
@@ -682,15 +628,15 @@ ul {
 @media (min-width: 1200px) {
     .casestudy-1, .casestudy-2, .casestudy-3, .casestudy-4, .casestudy-5, .casestudy-6 {
         width: 47%;
-        margin-top: 50px;
+        margin-top: 0;
     }
 }
 
 
 .extrainfo {
-    position: relative;
-    margin-top: 20px;
+    margin-top: 50px;
     justify-content: space-between;
+    position: relative;
 }
 
 }
@@ -699,6 +645,8 @@ ul {
     .extrainfo {
         display: flex;
         margin-top: 10px;
+        margin-bottom: 50px;
+        position: relative;
     }
 }
 
@@ -798,3 +746,53 @@ ul {
         margin: 30px 0 0 150px;
     }
 }
+
+
+
+
+
+  
+  button {
+    -webkit-appearance: none;
+    background: transparent;
+    border: 0;
+    outline:0;
+  }
+  
+  svg {
+    padding: 5px;
+  }
+  
+ 
+  
+  .left {
+    left: 42%;
+  }
+  
+  .right {
+    left: 58%;
+  }
+  
+  .left:hover polyline,
+  .left:focus polyline {
+    stroke-width: 3;
+  }
+  
+  .left:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+  }
+  
+  .right:hover polyline,
+  .right:focus polyline {
+    stroke-width: 3;
+  }
+  
+  .right:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+  }
+  
+  polyline {
+    transition: all 250ms ease-in-out;
+  }
