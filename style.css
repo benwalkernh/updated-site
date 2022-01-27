@@ -494,7 +494,7 @@ ul {
 @media (min-width: 1200px) {
     .intro-copy {
         margin: 0 0 0 0;
-        width: 2000px;
+        width: 100%;
 
     }
 }
